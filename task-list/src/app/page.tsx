@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import Image from "next/image";
+// import styles from "./page.module.css";
 
 import Addtodo from "./components/AddTodo";
 import Todolist from "./components/todolist";
