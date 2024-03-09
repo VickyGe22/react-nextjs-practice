@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+    color: black; /* 默认链接颜色 */
+    padding: 10px;
+    text-decoration: none; /* 移除下划线 */
+  }
+  
+  .link.active {
+    color: blueviolet; /* 活动链接颜色 */
+    font-weight: bold; /* 加粗字体 */
+  }
+  
