@@ -1,3 +1,5 @@
 export default function Page(){
-    return <h1>Hello</h1>
+    return (
+    <h1 className='tex-3xl text-purple-400'>Hello, Dashboard page</h1>
+    )
 }
