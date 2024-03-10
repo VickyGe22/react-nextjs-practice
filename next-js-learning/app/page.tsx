@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PostLink from "./blog/Postlist";
 import { Links } from "./component/links";
+import photos from './photos';
 
 
 export default function Home() {
@@ -38,6 +39,17 @@ export default function Home() {
       <button type={'button'} onClick={()=> router.push('/dashboard/settings')}>  
         Dashboard
       </button>
+
+      <main className='container mx-auto'>
+        <div className='grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 suto-rows-max gap-6 m-10'>
+          {photos.map(({id, imageSrc})=>(
+            <Link key={id} href={`/photos/${id}`}>
+              <Image src={imageSrc} alt={''} width={500} height={500} className='object-cover aspect-square rounded-full'/>
+            </Link>
+          ))}
+        </div>
+
+      </main>
 
     </>
   );

@@ -15,7 +15,8 @@ export const metadata: Metadata = {
 export default function RootLayout(props:{
   children: React.ReactNode,
   analytics: React.ReactNode,
-  team:React.ReactNode
+  team:React.ReactNode,
+  modal: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -25,6 +26,7 @@ export default function RootLayout(props:{
         {props.children}
         {props.analytics}
         {props.team}
+        {props.modal}
       </Suspense>
 
       </body>
