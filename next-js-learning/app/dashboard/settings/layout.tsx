@@ -1,3 +1,4 @@
+import Loading from "@/app/loading";
 
 export default function DashboardLayout ( {children} : {children: React.ReactNode}) {
     
